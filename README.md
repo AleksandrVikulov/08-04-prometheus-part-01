@@ -108,31 +108,87 @@
 <kbd>
   <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img10-2.png">
 </kbd>
-<p></p>---
+<p></p>
+
+---
 
 ### Задание 2
 
 Процесс выполнения
 
-1.
+1. Скачаем версию Node Exporter для нашей операционной системы.
 
-2.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task02-img01.png">
+</kbd>
+<p></p>
 
-3.
+2. Распакуем архив.
 
-4.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task02-img02.png">
+</kbd>
+<p></p>
 
-5.
+3. Запускаем Node Exporter, проверяем, что все работает
 
-6.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task02-img03-1.png">
+</kbd>
+<p></p>
 
-7.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task02-img03-2.png">
+</kbd>
+<p></p>
 
-8.
+4. Начнем подготовку к созданию сервиса для запуска Node Exporter
+   Для этого вначале переместим требуемые файлы в нужные папки:
 
-9.
+   * Создадим папку `/etc/prometheus/node-exporter`
+   * Скопируем туда файл `node_exporter`
+   * Передадим право управления пользователю prometheus
 
-10.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task02-img04.png">
+</kbd>
+<p></p>
+
+5. Создадим файл с сервисом `node-exporter.service`
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task02-img05.png">
+</kbd>
+<p></p>
+
+6. Откроем файл для редактирования и добавим туда настройки сервиса.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task02-img06.png">
+</kbd>
+<p></p>
+
+7. Запустим сервис через systemctl и убедимся, что все работает.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task02-img07-1.png">
+</kbd>
+<p></p>
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task02-img07-2.png">
+</kbd>
+<p></p>
+
 
 ---
 
