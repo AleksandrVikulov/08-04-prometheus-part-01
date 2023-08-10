@@ -12,25 +12,103 @@
 </kbd>
 <p></p>
 
-2.
+2. Скачиваем последнюю версию Prometheus для конкретной системы.
 
-3.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img02.png">
+</kbd>
+<p></p>
 
-4.
+3. Извлечем содержимое архива.
 
-5.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img03.png">
+</kbd>
+<p></p>
 
-6.
+4. Создадим рабочие директории `/etc/prometheus` и `/var/lib/prometheus`.
 
-7.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img04.png">
+</kbd>
+<p></p>
 
-8.
+5. Скопируем директории и файлы prometheus в нужные папки:
 
-9.
+* Скопируем файлы `prometheus` и `promtool` в директорию `/usr/local/bin`
 
-10.
+* Скопируем папку `console_libraries` в директорию `/etc/prometheus`
 
----
+* Скопируем папку `consoles` в директорию `/etc/prometheus`
+
+* Скопируем конфигурационный файл `prometheus.yml` в директорию `/etc/prometheus`
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img05.png">
+</kbd>
+<p></p>
+
+6. Передадим права управления файлами и папками пользователю prometheus.
+
+* Для папок `/etc/prometheus` и `/var/lib/prometheus`
+* Для файлов `/usr/local/bin/prometheus` и `/usr/local/bin/promtool`
+
+Убедимся, что права переданы.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img06.png">
+</kbd>
+<p></p>
+
+7. Проверим работоспособность Prometheus
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img07-1.png">
+</kbd>
+<p></p>
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img07-2.png">
+</kbd>
+<p></p>
+
+8. Начнем настройку сервиса для запуска и работы Prometheus.
+   Для начала создадим файл `prometheus.service`, который будет отвечать за запуск сервиса.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img08.png">
+</kbd>
+<p></p>
+
+9. Откроем файл для редактирования и добавим туда настройки сервиса.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img09.png">
+</kbd>
+<p></p>
+
+10. Запустим сервис через systemctl и убедимся, что все работает.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img10-1.png">
+</kbd>
+<p></p>
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img10-2.png">
+</kbd>
+<p></p>---
 
 ### Задание 2
 
