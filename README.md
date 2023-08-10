@@ -4,7 +4,13 @@
 
 Процесс выполнения
 
-1.
+1. Создаем пользователя Prometheus.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task01-img01.png">
+</kbd>
+<p></p>
 
 2.
 
@@ -128,4 +134,4 @@
 
 9.
 
-10. 
+10.
