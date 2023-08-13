@@ -292,22 +292,55 @@
 
 Процесс выполнения
 
-1.
+1. Зайдем в Grafana. Перейдем по адресу `Configuration -> Data Sources` и нажмем `Add data source`.
 
-2.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task05-img01.png">
+</kbd>
+<p></p>
 
-3.
+2. Выбираем тип источника Prometheus.
 
-4.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task05-img02.png">
+</kbd>
+<p></p>
 
-5.
+3. Вводис адрес для Prometheus: в нашем случае это localhost и порт 9090.
 
-6.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task05-img03.png">
+</kbd>
+<p></p>
 
-7.
+4. Нажимаем `Save and Test` и видим, что наш data source был успешно создан.
 
-8.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task05-img04.png">
+</kbd>
+<p></p>
 
-9.
+5. Теперь добавим дашборд.
+   Возбмем из материалов лекции ID нужного дашборда.
+   В Grafana перейдем на вкладку `Dashboards`, выберем `Import`.
+   Вставим скопированный ID дашборда и в параметрах добавим подключение к Prometheus.
 
-10.
+   <p></p>
+   <kbd>
+     <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task05-img05.png">
+   </kbd>
+   <p></p>
+
+6. Импортируем дашборд и видим, что данные поступает с адреса localhost:9100, т.е. с нашего Node Exporter.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task05-img06.png">
+</kbd>
+<p></p>
+
+---
