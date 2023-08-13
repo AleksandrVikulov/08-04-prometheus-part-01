@@ -238,25 +238,53 @@
 
 ### Задание 4* со звездочкой
 
-1.
+1. Зайдем на официальный сайт Grafana в раздел загрузок и посмотрим рекоменадции по установке на нашу систему.
 
-2.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task04-img01.png">
+</kbd>
+<p></p>
 
-3.
+2. Установим утилиты `adduser` и `libfontconfig` (они и так были последнее версии).
 
-4.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task04-img02.png">
+</kbd>
+<p></p>
 
-5.
+3. Скачаем deb-пакет с последним релизом Grafana.
 
-6.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task04-img03.png">
+</kbd>
+<p></p>
 
-7.
+4. Установим.
 
-8.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task04-img04.png">
+</kbd>
+<p></p>
 
-9.
+5. Добавляем в автозапуск и запускаем Grafana, проверяем, что всё работает.
 
-10.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task04-img05.png">
+</kbd>
+<p></p>
+
+6. Заходим к графану на 3000 порт.
+
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task04-img06.png">
+</kbd>
+<p></p>
 
 ---
 
