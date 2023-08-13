@@ -196,25 +196,39 @@
 
 Процесс выполнения
 
-1.
+1. Откроем на редактирование файл `/etc/prometheus/prometheus.yml`
 
-2.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task03-img01.png">
+</kbd>
+<p></p>
 
-3.
+2. Добавим в файл в качестве таргета адрес, по которому можно обратиться к Node Exporter.
 
-4.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task03-img02.png">
+</kbd>
+<p></p>
 
-5.
+3. Перезапустим Prometheus, проверим, что он работает после перезапуска.
 
-6.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task03-img03.png">
+</kbd>
+<p></p>
 
-7.
+4. Перейдем в GUI на локалхосте, посмотрим раздел `targets` и увидим, что появился наш Node Exporter появился как новый таргет на порту 9100.
 
-8.
+<p></p>
+<kbd>
+  <img src="https://github.com/AleksandrVikulov/08-04-prometheus-part-01/blob/master/img/task03-img04.png">
+</kbd>
+<p></p>
 
-9.
-
-10.
+5. По предыдущему скриншоту видно, что таргет перешел в статус `UP` и prometheus оправшивает наш endpoint.
 
 ---
 
